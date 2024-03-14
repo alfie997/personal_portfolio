@@ -1,5 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -8,41 +9,71 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 65px;
 }
 
-#navbox {
+.navbox {
   background-color: #be3144;
   width: 100%;
   height: 65px;
+  z-index: 1;
 }
 
-#navbar {
-  height: 65px;
-}
-
-#navbar a {
+.navbox a {
   color: white;
   text-decoration: none;
-  height: 65px;
+  padding: 20px;
+  padding-bottom: 40px;
 }
 
-#navbar a:hover {
+.navbox a:hover {
   background-color: steelblue;
-  height: 100%;
-  padding-top: 100%;
-  padding-bottom: 100%;
 }
 
-div {
-  border: 1ps solid red;
-  height: 300px;
-  width: 300px;
+main {
+  text-align: center;
+}
+
+.welbox {
+  background-color: grey;
+  height: 700px;
+}
+
+.welbox section {
+  position: relative;
+  top: 50%;
+}
+
+.probox {
+  background-color: steelblue;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 40px;
+}
+
+.item {
+  border: 1px solid red;
+  background-color: grey;
+  height: 350px;
+  width: 400px;
 }
 
 img {
   height: 100%;
   width: 100%;
+}
+
+.conbox {
+  background-color: grey;
 }
 
 @media (max-width: 300px) {
