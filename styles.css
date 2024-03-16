@@ -9,13 +9,15 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .navbox {
   background-color: #be3144;
+  box-shadow: 0 5px rgba(22, 22, 22, 0.6);
+  text-align: right;
   width: 100%;
   height: 65px;
-  z-index: 1;
 }
 
 .navbox a {
@@ -34,17 +36,49 @@ main {
 }
 
 .welbox {
-  background-color: grey;
-  height: 700px;
+  width: 100%;
+  background: linear-gradient(
+    70deg,
+    rgb(48, 48, 48) 30%,
+    rgb(22, 22, 22) 
+  );
+  height: 750px;
 }
 
 .welbox section {
   position: relative;
-  top: 50%;
+  top: 40%;
+}
+
+.welbox h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.5rem;
+  color: white;
+  margin: 0;
+}
+
+.welbox p {
+  font-style: italic;
+  font-size: 1.8rem;
+  color: crimson;
+  margin: 0;
 }
 
 .probox {
-  background-color: steelblue;
+  background-color: #45567d;
+  padding-top: 100px;
+}
+
+.probox h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
+  color: white;
+  margin: 0;
+}
+
+.probox hr {
+  width: 650px;
+  color: white;
 }
 
 ul {
@@ -72,8 +106,16 @@ img {
   width: 100%;
 }
 
+.item a {
+  background-color: grey;
+}
+
 .conbox {
   background-color: grey;
+}
+
+hr {
+  color: red;
 }
 
 @media (max-width: 300px) {
