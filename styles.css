@@ -14,7 +14,7 @@ header {
 
 .navbox {
   background-color: #be3144;
-  box-shadow: 0 5px rgba(22, 22, 22, 0.6);
+  box-shadow: 0 2px rgba(22, 22, 22, 0.6);
   text-align: right;
   width: 100%;
   height: 65px;
@@ -27,8 +27,11 @@ a {
 
 .navbox a {
   font-size: 1.3rem;
-  padding: 20px;
-  margin: 20px;
+  position: relative;
+  top: 16px;
+  right: 19px;
+  padding: 19px 16px 19px 16px;
+  margin: 0;
   /*padding-bottom: 100%;*/
 }
 
